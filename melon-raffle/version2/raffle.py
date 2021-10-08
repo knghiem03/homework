@@ -17,7 +17,7 @@ def pick_winner(customers):
 
     print(f"Tell {name} at {email} that they've won")
 
-def run_raffle():
+def run_raffle():P
     """Run the weekly raffle."""
 
     customers = get_customers_from_file("customers.txt")

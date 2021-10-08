@@ -30,5 +30,14 @@ class Melon(object):
             return f"{self.color} {self.weight:.2f} lbs {self.melon_type}"
 
 # FIXME: Add Squash class definition here.
+
 class Squash(Melon):
-    pass
+
+    def __init__(self, melon_type):
+        super().__init__(melon_type)
+    
+    def prep(self):
+        # robots.cleanerbot.clean(self)
+        # robots.stickerbot.apply_logo(self)
+        super().prep() 
+        robots.painterbot.paint(self)
